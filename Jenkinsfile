@@ -6,12 +6,10 @@ pipeline {
                  git 'https://github.com/Strvsuri/PROJECT-K8S-TOMCAT.git'
             }        
         }
-        stage('build'){
+        stage (' build pro') {
             steps {
-                withMaven(maven: 'mvn') {
-                    sh "mvn clean package"
-                }
+                sh 'mvn clean install'
             }
-        }
+        } 
     }
 }

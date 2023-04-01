@@ -1,13 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Git-checkout') {
+        stage ('Git-checkout') {
             steps {
                  git 'https://github.com/Strvsuri/PROJECT-K8S-TOMCAT.git'
             }        
-        stage('maven build') {
+        stage ('maven build') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn clean install'
             }
         }
         }

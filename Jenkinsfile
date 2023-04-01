@@ -5,11 +5,11 @@ pipeline {
             steps {
                  git 'https://github.com/Strvsuri/PROJECT-K8S-TOMCAT.git'
             }        
-        stage ('maven build') {
-            steps {
-                sh 'mvn clean install'
-            }
-        }
+//         stage ('maven build') {
+//             steps {
+//                 sh 'mvn clean install'
+//             }
+//         }
         }
     }
 }

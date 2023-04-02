@@ -50,10 +50,12 @@ pipeline {
                 }
             }
         }
-        stage ('Docker image push') {
+        stage ('k8s Deploy') {
             steps {
                 sshagent(['687a60ca-45ca-4284-945e-3a0fd25af5ee']) {
                     withCredentials([usernameColonPassword(credentialsId: 'Dockerhub', variable: 'Dockerregistry')]) {
+                        sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.83.97'
+                        sh 'scp Deployment.yml ubuntu@172.31.83.97:/opt'
                         sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.83.97 sudo kubectl apply -f Deployment.yml'
                     }
                 }

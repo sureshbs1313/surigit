@@ -3,5 +3,5 @@
   tasks: 
     -  name: a simple test
        copy:
-         src: /home/ansadmin/opt/*.yml
+         src: /home/ansadmin/opt/Deployment.yml
          dest: /home/ansadmin/opt

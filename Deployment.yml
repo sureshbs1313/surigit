@@ -17,4 +17,4 @@ spec:
           image: suribau/maven1:v1.latest
           imagePullPolicy: Always
           ports:
-          - containerPort: 80
+          - containerPort: 8080

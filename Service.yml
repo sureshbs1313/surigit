@@ -1,14 +1,14 @@
 kind: Service                             
 apiVersion: v1
 metadata:
-  name: pro_devops
+  name: prodevops
   labels:
-    app: pro_devops
+    app: prodevops
 spec:
   ports:
     - port: 8080                               
       targetPort: 80                    
       nodePort: 31200
   selector:
-    app: pro_devops                    
+    app: prodevops                    
   type: LoadBalancer

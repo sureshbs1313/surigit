@@ -16,5 +16,8 @@ spec:
         - name: c1
           image: suribau/maven1:v1.latest
           imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "200m"
           ports:
           - containerPort: 8080

@@ -1,11 +1,11 @@
 - hosts: all
   become: yes
-  tasks: 
-    -  name: a simple test
-       copy:
-         src: /home/ansadmin/opt/Deployment.yml
-         dest: /home/ansadmin/opt
-    -  name: copying service file
-       copy:
-         src: /home/ansadmin/opt/service.yml
-         dest: /home/ansadmin/opt
+  tasks:
+    - name: Copy CA files
+      copy:
+        src: '{{item}}'
+        dest: '/home/ansadmin/opt'
+      loop:
+        - Deployment.yml
+        - service.yml
+       

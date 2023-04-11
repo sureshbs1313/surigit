@@ -1,5 +1,7 @@
 - hosts: all
   become: yes
-  tasks:    
+  tasks:
+     - name: delete old deployment
+       command: kubectl delete -f /home/ansadmin/opt/Deployment.yml
      - name: create new deployment
        command: kubectl apply -f /home/ansadmin/opt/Deployment.yml

@@ -5,7 +5,7 @@
        copy:
          src: /home/ansadmin/opt/Deployment.yml
          dest: /home/ansadmin/opt
-    -  name: a simple test
+    -  name: copying service file
        copy:
          src: /home/ansadmin/opt/service.yml
          dest: /home/ansadmin/opt

@@ -6,8 +6,8 @@ metadata:
     app: prodevops
 spec:
   ports:
-    - port: 8080                               
-      targetPort: 80                    
+    - port: 8080                             
+      targetPort: 8080                    
       nodePort: 31200
   selector:
     app: prodevops                    

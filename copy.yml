@@ -7,5 +7,5 @@
         dest: '/home/ansadmin/opt'
       loop:
         - Deployment.yml
-        - service.yml
+        - Service.yml
        

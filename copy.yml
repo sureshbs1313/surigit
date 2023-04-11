@@ -1,0 +1,7 @@
+- hosts: dev
+  user: ansadmin
+  become: yes
+  connection: ssh
+  tasks: 
+    - name: copying file 
+      action: copy src= Dockerfile dest= home/ansadmin/dir/

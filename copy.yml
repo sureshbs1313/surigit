@@ -4,4 +4,4 @@
     -  name: a simple test
        copy:
          src: /home/ansadmin/opt/Dockerfile
-         dest: home/ansadmin/dir1/
+         dest: home/ansadmin/dir1

@@ -8,4 +8,5 @@
       loop:
         - Deployment.yml
         - Service.yml
+        - Dockerfile
        

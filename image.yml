@@ -1,4 +1,5 @@
 - hosts: all
+  become: yes
   tasks:
      - name: Buildinging image
        command: docker build -t myim .

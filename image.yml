@@ -2,4 +2,4 @@
   become: yes
   tasks:
      - name: Buildinging image
-       command: docker build -t myimage /home/ansadmin/opt
+       command: docker build -t /home/ansadmin/opt

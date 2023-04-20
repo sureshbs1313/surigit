@@ -9,4 +9,5 @@
         - Deployment.yml
         - Service.yml
         - Dockerfile
+        - webapp.war
        

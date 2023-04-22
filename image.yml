@@ -3,9 +3,9 @@
   tasks:
      - name: Buildinging image
        command: docker image build -t suresh1  /home/ansadmin/opt
-    # - name: tagging an image
-     #  command: docker tag $JOB_NAME:v1.$BUILD_ID sureshdocker31/$JOB_NAME:v1.latest
-     #- name: pushing an image
-      # command: docker image push sureshdocker31/$JOB_NAME:v1.$BUILD_ID
-     #- name: pushing latest
-      # command: docker image push sureshdocker31/$JOB_NAME:v1.latest   
+     - name: tagging an image
+       command: docker tag $JOB_NAME:v1.$BUILD_ID sureshdocker31/$JOB_NAME:v1.latest
+     - name: pushing an image
+       command: docker image push sureshdocker31/$JOB_NAME:v1.$BUILD_ID
+     - name: pushing latest
+      command: docker image push sureshdocker31/$JOB_NAME:v1.latest   

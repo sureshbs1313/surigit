@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: c1
-          image: suribau/mavenpro:v1.latest
+          image: sureshdocker31/maven_project:v1.latest
           imagePullPolicy: Always
           resources:
             requests:
